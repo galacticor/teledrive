@@ -24,6 +24,7 @@ services:
     depends_on:
       # - db
       - redis
+    restart: unless-stopped
 
   # db:
   #   image: postgres:13
